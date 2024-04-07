@@ -22,7 +22,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Metallica is an American heavy metal band, ' + myName;
+    myHeading.innerHTML = 'Hi, ' + myName + '. Metallica is an American heavy metal band';
   }
 }
 
@@ -30,7 +30,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Metallica is an American heavy metal band, ' + storedName;
+  myHeading.innerHTML = 'Hi, ' + storedName + '. Metallica is an American heavy metal band';
 }
 
 myButton.onclick = function() {
